@@ -200,8 +200,7 @@ let pass=document.getElementById("password").value;
 let msg=document.getElementById("message");
 
 if(user==="admin" && pass==="1234"){
-msg.style.color="#7CFC00";
-msg.innerHTML="✅ Login Successful! Welcome "+user;
+window.location.href="home.html";
 }
 else{
 msg.style.color="#FFD700";
