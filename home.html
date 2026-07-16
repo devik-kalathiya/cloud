@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cloud Infrastructure Portal</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#eef4ff;
+color:#333;
+}
+
+header{
+background:linear-gradient(135deg,#0078D4,#00A4EF);
+color:white;
+padding:25px;
+text-align:center;
+}
+
+header h1{
+font-size:40px;
+}
+
+header p{
+margin-top:10px;
+font-size:18px;
+}
+
+nav{
+background:#004b87;
+padding:15px;
+display:flex;
+justify-content:center;
+gap:40px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#FFD700;
+}
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:50px;
+background:white;
+}
+
+.hero-text{
+width:55%;
+}
+
+.hero-text h2{
+font-size:35px;
+color:#0078D4;
+margin-bottom:15px;
+}
+
+.hero-text p{
+font-size:18px;
+line-height:1.7;
+}
+
+.hero img{
+width:35%;
+}
+
+.section{
+padding:50px;
+}
+
+.section h2{
+text-align:center;
+color:#0078D4;
+margin-bottom:30px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card i{
+font-size:45px;
+color:#0078D4;
+margin-bottom:15px;
+}
+
+.steps{
+background:white;
+padding:40px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.steps ol{
+margin-left:25px;
+font-size:18px;
+line-height:2;
+}
+
+footer{
+margin-top:50px;
+background:#004b87;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.button{
+display:inline-block;
+margin-top:30px;
+padding:12px 25px;
+background:#0078D4;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+.button:hover{
+background:#005fa3;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1><i class="fa-solid fa-cloud"></i> Cloud Infrastructure Portal</h1>
+
+<p>Learn Cloud Computing and Microsoft Azure Static Website Hosting</p>
+
+</header>
+
+<nav>
+
+<a href="#">Home</a>
+
+<a href="#cloud">Cloud</a>
+
+<a href="#services">Services</a>
+
+<a href="#hosting">Hosting</a>
+
+<a href="index.html">Logout</a>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h2>What is Cloud Computing?</h2>
+
+<p>
+
+Cloud Computing is the delivery of computing resources such as servers,
+storage, networking, databases, analytics and software over the Internet.
+Instead of buying physical hardware, users rent resources from cloud
+providers like Microsoft Azure, Amazon Web Services (AWS), and Google Cloud Platform (GCP).
+
+</p>
+
+<a href="#hosting" class="button">Learn Azure Hosting</a>
+
+</div>
+
+<img src="https://cdn-icons-png.flaticon.com/512/4144/4144783.png">
+
+</section>
+
+<section class="section" id="services">
+
+<h2>Major Cloud Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<i class="fa-solid fa-server"></i>
+<h3>IaaS</h3>
+<p>
+Infrastructure as a Service provides virtual machines, storage, networking and servers.
+Example: Azure Virtual Machines.
+</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-laptop-code"></i>
+<h3>PaaS</h3>
+<p>
+Platform as a Service provides an environment to develop and deploy applications.
+Example: Azure App Service.
+</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-globe"></i>
+<h3>SaaS</h3>
+<p>
+Software as a Service delivers complete software through the web.
+Example: Microsoft 365 and Gmail.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Advantages of Cloud Computing</h2>
+
+<div class="cards">
+
+<div class="card">
+<i class="fa-solid fa-coins"></i>
+<h3>Cost Effective</h3>
+<p>Pay only for the resources you use.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-expand"></i>
+<h3>Scalable</h3>
+<p>Increase or decrease resources whenever needed.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-shield-halved"></i>
+<h3>Secure</h3>
+<p>Cloud providers offer encryption, backups and identity management.</p>
+</div>
+
+<div class="card">
+<i class="fa-solid fa-earth-asia"></i>
+<h3>Global Access</h3>
+<p>Access applications and data from anywhere.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="hosting">
+
+<h2>How to Host a Static Website on Microsoft Azure</h2>
+
+<div class="steps">
+
+<ol>
+
+<li>Sign in to Azure Portal.</li>
+
+<li>Create a Storage Account.</li>
+
+<li>Open the Storage Account.</li>
+
+<li>Select <b>Static Website</b> under Data Management.</li>
+
+<li>Enable Static Website Hosting.</li>
+
+<li>Upload <b>index.html</b>, CSS, JavaScript and image files.</li>
+
+<li>Save the configuration.</li>
+
+<li>Copy the generated URL.</li>
+
+<li>Open the URL in your browser to view the website.</li>
+
+</ol>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>Cloud Infrastructure Laboratory Project</h3>
+
+<p>Developed by Devik Kalathiya | VIT Chennai</p>
+
+</footer>
+
+</body>
+</html>
